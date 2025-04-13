@@ -1,0 +1,391 @@
+/*** Place your styles below ***/ 
+
+
+/**********/
+/* WOFF2 */
+/*********/
+/* Noto Serif TC */
+@font-face {
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 400; /* Regular */
+  src: local('Noto Serif TC Regular'), /* Check for local font */
+       url('../fonts/NotoSerifTC-Regular.woff2') format('woff2'),
+       url('../fonts/NotoSerifTC-Regular.woff') format('woff'),
+       url('../fonts/NotoSerifTC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 700; /* Bold */
+  src: local('Noto Serif TC Bold'), /* Check for local font */
+       url('../fonts/NotoSerifTC-Bold.woff2') format('woff2'),
+       url('../fonts/NotoSerifTC-Bold.woff') format('woff'),
+       url('../fonts/NotoSerifTC-Bold.ttf') format('truetype');
+}
+
+/* Noto Sans TC */
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400; /* Regular */
+  src: local('Noto Sans TC Regular'), /* Check for local font */
+       url('../fonts/NotoSansTC-Regular.woff2') format('woff2'),
+       url('../fonts/NotoSansTC-Regular.woff') format('woff'),
+       url('../fonts/NotoSansTC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700; /* Bold */
+  src: local('Noto Sans TC Bold'), /* Check for local font */
+       url('../fonts/NotoSansTC-Bold.woff2') format('woff2'),
+       url('../fonts/NotoSansTC-Bold.woff') format('woff'),
+       url('../fonts/NotoSansTC-Bold.ttf') format('truetype');
+}
+
+/* General Styles */
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    margin: 0;
+	font-size: 12pt; /* Base font size */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: smaller;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3 {
+    margin-top: 10pt;
+    page-break-after: avoid;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #4F81BD;
+}
+
+h1 {
+    font-size: 1.1em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1.3em;
+    page-break-before: always;
+}
+
+h3 .table-chapter-size, h4 .table-chapter-size { /* Combined rule */
+    font-size: 1.3em; /* Or a relative size like 1em if you prefer */
+}
+
+h3 .chapter-title-size { /* For the spans within the h3 */
+    font-size: 1.3em; 
+    font-family: "Noto Sans TC", sans-serif;
+    font-style: normal;
+    margin-bottom: 1em; /* Adjust this value as needed */
+}
+
+h3 .chapter-index { /* New rule for the chapter index */
+    font-size: 1.3em; /* Or a relative size like 1em if you prefer */
+}
+
+h4 { /* General h4 styles (if needed) */
+    margin-top: 10pt;
+    page-break-after: avoid;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #4F81BD;  /* Default h4 color */
+	page-break-before: always;
+}
+
+h4.MsoToc1 { /* More specific selector for your TOC h4 */
+    font-size: 1.3em; /* Or use em for better scaling */
+}
+
+h4.index-book-title, h3.index-book-title { /* More specific selector for your TOC h4 */
+    margin-top: 1.5em;
+    font-size: 1.4em; /* Or use em for better scaling */
+	page-break-before: always;
+}
+
+h2.MsoToc1, h3.MsoToc1 { /* More specific selector for your TOC h4 */
+    font-size: 1.3em; /* Or use em for better scaling */
+}
+
+h2 a, h3 a, h4 a { /* Combined rule for links within h3 and h4 */
+    color: inherit; /* Inherit color from the parent */
+    text-decoration: none; /* Remove the underline */
+}
+
+p.MsoToc1, li.MsoToc1, div.MsoToc1 {
+    margin: 0 0 8pt 0; /* Consolidated margin */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+}
+
+p.MsoToc2 {
+    font-family: "Noto Sans TC", sans-serif;
+    margin-left: 0;
+	margin-bottom: 1.5em; /* Adjust as needed */	
+	font-weight: bold;
+}
+
+p.MsoToc2 a {
+    margin-right: 0.5em; /* Adjust this value as needed */
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+
+.heading-1-text { /* Mimicking Heading1Char */
+    font-family: "Noto Sans TC", sans-serif;
+    color: #365F91;
+    font-weight: bold;
+    display: block; /* Makes the span behave like a block element */
+    margin-top: 24pt; /* Adjust as needed */
+    margin-bottom: 0pt; /* Adjust as needed */
+}
+
+p.MsoPlainText { /* Reset margins for plain text paragraphs */
+    margin: 0;
+}
+
+.heading-2-text { /* Mimicking Heading2Char */
+    font-family: "Noto Sans TC", sans-serif;
+    color: #4F81BD;
+    font-weight: bold;
+    display: block; /* Makes the span behave like a block element */
+    margin-top: 0pt; /* Adjust as needed */
+    margin-bottom: 0pt; /* Adjust as needed */
+}
+
+.heading-2-text a { /* Target the <a> tag INSIDE .heading-2-text */
+    color: inherit; /* Inherit the color from the span */
+    text-decoration: none; /* Remove the underline */
+}
+
+p.MsoToc1.testament-link a { /* Targets ONLY the first paragraph */
+    color: inherit; /* Inherit color from the h4 */
+    text-decoration: none; /* Remove the underline */
+}
+
+.verse-number2 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 1em;
+    color: #4F81BD;
+    margin-right: 0.25em; /* Or whatever spacing you prefer */
+}
+
+.MsoToc2 {
+    font-family: "Noto Sans TC", sans-serif;
+    margin-left: 1em;
+    margin-bottom: 5pt;
+}
+
+.chapter-link {
+    font-family: "Noto Sans TC", sans-serif;
+    color: #0000EE;
+}
+
+/* Verse Styles */
+.verse-number {
+    color: blue;
+    font-size: 1em; /* or 1em */
+}
+
+.ref-number {
+    color: blue;
+    font-size: 0.9em; /* or 1em */
+}
+
+.ref-verse-text {
+	font-family: "Noto Sans TC", sans-serif;
+    font-size: 0.9em; /* or 0.8em */
+}
+
+/* Cover/Title/Copyright Page Styles */
+.cover-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.cover-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.title-page {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20% 0;
+    font-family: "Noto Sans TC", sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-content {
+    text-align: center; /* Center text within title content */
+    margin-bottom: 2em; /* Space between title and logo */
+    flex-grow: 1;
+}
+
+.logo-container {
+    margin-top: 20px;
+    width: 200px;
+}
+
+.logo-container img {
+    max-width: 80%;
+    height: auto;
+}
+
+.book-title {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0.5em;
+}
+
+.book-subtitle {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.publisher {
+    font-size: 1.5em;
+    margin: 2em 0 0;
+}
+
+.copyright-page {
+    text-align: center;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 1em;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ccc; /* Added missing width value */
+}
+
+.copyright-notice {
+    font-family: "Noto Sans TC", sans-serif; /* Or your preferred font */
+    font-size: 1em; /* Adjust as needed */
+    text-align: left; /* Or text-align: center; */
+    margin-bottom: 20px; /* Add some spacing below */
+}
+
+.copyright-notice strong {
+    font-weight: bold;
+}
+
+.copyright-notice em {
+    font-style: italic;
+}
+
+.copyright-notice ul {
+    list-style-type: disc; /* Or other list style */
+    padding-left: 20px; /* Indent the list */
+}
+
+.copyright-notice li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.page-break {
+    page-break-before: always;
+    display: block; /* Key addition! */
+    clear: both; /* Optional, but can be helpful */
+}
+
+.custom-heading {
+    font-size: 1.5em; /* Adjust as needed */
+}
+
+.highlight-text {
+	margin-top: 0; 
+	margin-bottom: 0.1em;
+	font-size: 1em;
+	font-family: "Noto Sans TC", sans-serif;
+}
+
+ol {
+	margin-top: 0; 
+	margin-bottom: 0.5em;
+}
+
+.prophecy-text {
+    margin-top: 0;
+	margin-bottom: 0.5em;
+	font-size: 1em;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.book-content {
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.ndash {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2em; /* Adjust size if needed */
+}
+
+.ref-verse-number {
+    font-size: 0.9em;
+    color: #4F81BD;
+    margin-right: 0.5em; /* Add space between number and text */
+}
+
+.ref-scripture-text {
+    font-family: "Noto Sans TC", sans-serif;
+    color: #4F81BD;
+}
+
+.chapter-title {
+    font-size: 1.3em;
+    line-height: 115%;
+    font-style: normal;
+    font-weight: bold; /* Added bold to match h3 */
+    margin-top: 1em; /* Add top margin like h3 */
+    margin-bottom: 0.5em; /* Add bottom margin like h3 */
+    font-family: "Noto Sans TC", sans-serif; /* Or whatever font you found */
+    color: #4F81BD;
+}
+
+.chapter-title a {  /* Style the <a> tag ONLY within .chapter-title */
+    color: inherit; /* Inherit the color from .chapter-title */
+    text-decoration: none; /* Remove the underline */
+}
+
+.appendix li, .appendix li + p {
+  font-size: 1em;
+}
+
+.appendix li + p {
+	margin-top: 0.2em;
+}
+   
