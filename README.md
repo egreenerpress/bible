@@ -13,7 +13,7 @@ As this is the First Edition, we recognize there's always room for improvement. 
 
 To provide your feedback, please visit our official website and use the dedicated feedback form:
 
-**[www.egreenerpress.com/cgb-bible/feedback](https://www.egreenerpress.com/cgb-bible/feedback)**
+**[www.egrpress.com/cgb-bible/feedback](https://www.egrpress.com/cgb-bible/feedback)**
 
 (You can find the "Feedback" link in the navigation bar of the CGB Bible section.)
 
